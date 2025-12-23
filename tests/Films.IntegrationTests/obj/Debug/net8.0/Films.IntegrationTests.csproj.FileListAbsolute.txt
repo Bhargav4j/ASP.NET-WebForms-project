@@ -473,3 +473,4 @@
 /modernize-data/studio-data/TNT1001/APP2460/transformed-code/706/studio-workspace/ASPNETWebFormsproject2302/tests/Films.IntegrationTests/obj/Debug/net8.0/Films.IntegrationTests.pdb
 /modernize-data/studio-data/TNT1001/APP2460/transformed-code/706/studio-workspace/ASPNETWebFormsproject2302/tests/Films.IntegrationTests/obj/Debug/net8.0/Films.IntegrationTests.genruntimeconfig.cache
 /modernize-data/studio-data/TNT1001/APP2460/transformed-code/706/studio-workspace/ASPNETWebFormsproject2302/tests/Films.IntegrationTests/obj/Debug/net8.0/ref/Films.IntegrationTests.dll
+/modernize-data/studio-data/TNT1001/APP2460/transformed-code/706/studio-workspace/ASPNETWebFormsproject2302/tests/Films.IntegrationTests/bin/Debug/net8.0/CoverletSourceRootsMapping_Films.IntegrationTests

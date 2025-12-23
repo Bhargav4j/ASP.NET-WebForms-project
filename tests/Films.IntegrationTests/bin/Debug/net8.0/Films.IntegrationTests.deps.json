@@ -42,6 +42,7 @@
           "Microsoft.AspNetCore.Mvc.Testing": "8.0.0",
           "Microsoft.EntityFrameworkCore.InMemory": "8.0.0",
           "Microsoft.NET.Test.Sdk": "17.9.0",
+          "coverlet.msbuild": "6.0.4",
           "xunit": "2.6.6",
           "xunit.runner.visualstudio": "2.5.6",
           "Microsoft.AspNetCore.Antiforgery": "8.0.0.0",
@@ -422,6 +423,7 @@
           "lib/netstandard2.0/Azure.Identity.dll": {}
         }
       },
+      "coverlet.msbuild/6.0.4": {},
       "Dapper/2.1.28": {
         "runtime": {
           "lib/net7.0/Dapper.dll": {
@@ -3673,6 +3675,13 @@
       "sha512": "sha512-eHEiCO/8+MfNc9nH5dVew/+FvxdaGrkRL4OMNwIz0W79+wtJyEoeRlXJ3SrXhoy9XR58geBYKmzMR83VO7bcAw==",
       "path": "azure.identity/1.7.0",
       "hashPath": "azure.identity.1.7.0.nupkg.sha512"
+    },
+    "coverlet.msbuild/6.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Qa7Hg+wrOMDKpXVn2dw4Wlun490bIWsFW0fdNJQFJLZnbU27MCP0HJ2mPgS+3EQBQUb0zKlkwiQzP+j38Hc3Iw==",
+      "path": "coverlet.msbuild/6.0.4",
+      "hashPath": "coverlet.msbuild.6.0.4.nupkg.sha512"
     },
     "Dapper/2.1.28": {
       "type": "package",
