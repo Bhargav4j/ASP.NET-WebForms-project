@@ -1,0 +1,15 @@
+@page
+@using Films.Web.Pages
+@model Films.Web.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Films Management System</h1>
+    <p>Learn about managing your film collection with our modern ASP.NET Core 8 application.</p>
+    <p>
+        <a class="btn btn-primary" asp-page="/Films/Index">View Films</a>
+        <a class="btn btn-secondary" asp-page="/Actors/Index">View Actors</a>
+    </p>
+</div>
