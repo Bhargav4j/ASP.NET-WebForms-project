@@ -1,0 +1,16 @@
+using Films.Domain.DTOs;
+
+namespace Films.Domain.Interfaces.Services;
+
+/// <summary>
+/// Service interface for Film business operations
+/// </summary>
+public interface IFilmService
+{
+    Task<IEnumerable<FilmDto>> GetAllAsync(CancellationToken cancellationToken = default);
+    Task<FilmDto?> GetByIdAsync(int id, CancellationToken cancellationToken = default);
+    Task<FilmDto> CreateAsync(FilmCreateDto dto, CancellationToken cancellationToken = default);
+    Task UpdateAsync(int id, FilmUpdateDto dto, CancellationToken cancellationToken = default);
+    Task DeleteAsync(int id, CancellationToken cancellationToken = default);
+    Task<IEnumerable<FilmDto>> SearchAsync(string searchTerm, CancellationToken cancellationToken = default);
+}

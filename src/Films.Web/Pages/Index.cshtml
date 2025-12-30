@@ -1,0 +1,40 @@
+@page
+@model Films.Web.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Films Management System</h1>
+    <p class="lead">Web Technologies Project - Films Database</p>
+
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Films</h5>
+                    <p class="card-text">Manage films in the database</p>
+                    <a asp-page="/Films/Index" class="btn btn-primary">View Films</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Actors</h5>
+                    <p class="card-text">Manage actors information</p>
+                    <a asp-page="/Actors/Index" class="btn btn-primary">View Actors</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">About</h5>
+                    <p class="card-text">Learn more about this project</p>
+                    <a href="https://moodle.unwe.bg" target="_blank" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
