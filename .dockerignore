@@ -1,0 +1,62 @@
+# Build artifacts
+bin/
+obj/
+
+# IDE and editor folders
+.vs/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+
+# Docker files
+.dockerignore
+Dockerfile*
+docker-compose*
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation
+*.md
+README*
+LICENSE*
+
+# Logs
+logs/
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Build output
+publish/
+
+# Visual Studio cache/options
+.vs/
+
+# JetBrains Rider
+.idea/
+
+# Development settings
+launchSettings.json
