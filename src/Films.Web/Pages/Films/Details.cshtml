@@ -1,0 +1,51 @@
+@page "{id:int}"
+@model Films.Web.Pages.Films.DetailsModel
+@{
+    ViewData["Title"] = "Film Details";
+}
+
+<h1>Film Details</h1>
+
+@if (Model.Film != null)
+{
+    <div>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">Name</dt>
+            <dd class="col-sm-10">@Model.Film.Name</dd>
+
+            <dt class="col-sm-2">Year</dt>
+            <dd class="col-sm-10">@Model.Film.Year</dd>
+
+            <dt class="col-sm-2">Description</dt>
+            <dd class="col-sm-10">@Model.Film.Description</dd>
+
+            <dt class="col-sm-2">Created Date</dt>
+            <dd class="col-sm-10">@Model.Film.CreatedDate.ToString("yyyy-MM-dd HH:mm")</dd>
+
+            <dt class="col-sm-2">Created By</dt>
+            <dd class="col-sm-10">@Model.Film.CreatedBy</dd>
+
+            @if (Model.Film.ModifiedDate.HasValue)
+            {
+                <dt class="col-sm-2">Modified Date</dt>
+                <dd class="col-sm-10">@Model.Film.ModifiedDate.Value.ToString("yyyy-MM-dd HH:mm")</dd>
+            }
+
+            @if (!string.IsNullOrEmpty(Model.Film.ModifiedBy))
+            {
+                <dt class="col-sm-2">Modified By</dt>
+                <dd class="col-sm-10">@Model.Film.ModifiedBy</dd>
+            }
+        </dl>
+    </div>
+    <div>
+        <a asp-page="Edit" asp-route-id="@Model.Film.Id" class="btn btn-warning">Edit</a>
+        <a asp-page="Index" class="btn btn-secondary">Back to List</a>
+    </div>
+}
+else
+{
+    <p class="alert alert-danger">Film not found.</p>
+    <a asp-page="Index" class="btn btn-secondary">Back to List</a>
+}
