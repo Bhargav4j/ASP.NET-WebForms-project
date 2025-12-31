@@ -14,3 +14,8 @@
 /modernize-data/studio-data/TNT1001/APP2649/transformed-code/779/studio-workspace/ASP4/src/Films.Application/obj/Debug/net8.0/refint/Films.Application.dll
 /modernize-data/studio-data/TNT1001/APP2649/transformed-code/779/studio-workspace/ASP4/src/Films.Application/obj/Debug/net8.0/Films.Application.pdb
 /modernize-data/studio-data/TNT1001/APP2649/transformed-code/779/studio-workspace/ASP4/src/Films.Application/obj/Debug/net8.0/ref/Films.Application.dll
+/modernize-data/studio-data/TNT1001/APP2649/transformed-code/779/studio-workspace/ASP4/src/Films.Application/bin/Debug/net8.0/Films.Domain.deps.json
+/modernize-data/studio-data/TNT1001/APP2649/transformed-code/779/studio-workspace/ASP4/src/Films.Application/bin/Debug/net8.0/Films.Domain.runtimeconfig.json
+/modernize-data/studio-data/TNT1001/APP2649/transformed-code/779/studio-workspace/ASP4/src/Films.Application/bin/Debug/net8.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/modernize-data/studio-data/TNT1001/APP2649/transformed-code/779/studio-workspace/ASP4/src/Films.Application/bin/Debug/net8.0/xunit.runner.reporters.netcoreapp10.dll
+/modernize-data/studio-data/TNT1001/APP2649/transformed-code/779/studio-workspace/ASP4/src/Films.Application/bin/Debug/net8.0/xunit.runner.utility.netcoreapp10.dll
