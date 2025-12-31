@@ -1,0 +1,51 @@
+# Build artifacts
+bin/
+obj/
+**/bin/
+**/obj/
+
+# IDE folders
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation
+*.md
+README.*
+LICENSE
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Development settings
+launchSettings.json
+appsettings.Development.json
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose*.yml

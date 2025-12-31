@@ -1,0 +1,39 @@
+version: '3.9'
+
+services:
+  films-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: films-web:latest
+    container_name: films-web
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:8080
+      - DB_SERVER=${DB_SERVER:-localhost}
+      - DB_NAME=${DB_NAME:-FilmsDb}
+      - DB_USER=${DB_USER:-sa}
+      - DB_PASSWORD=${DB_PASSWORD:-YourStrong@Passw0rd}
+      - DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
+    volumes:
+      - ./logs:/app/logs
+      - ./appsettings:/app/appsettings
+    networks:
+      - films-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8080/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+networks:
+  films-network:
+    driver: bridge
+
+volumes:
+  logs:
+  appsettings:
