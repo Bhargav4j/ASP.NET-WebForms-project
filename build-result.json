@@ -1,0 +1,161 @@
+{
+  "assessmentId": "build-compilation-2025-12-31",
+  "summary": {
+    "totalIssues": 3,
+    "issuesFixed": 1,
+    "issuesFailed": 2,
+    "issuesSkipped": 0,
+    "filesModified": 1,
+    "buildStatus": "FAILURE",
+    "successRate": 0.33,
+    "status": "failed"
+  },
+  "issues": [
+    {
+      "id": "issue-1",
+      "severity": "critical",
+      "category": "build-configuration",
+      "title": "Incorrect solution file path reference",
+      "description": "Solution file referenced project at 'FIlms\\FIlms.csproj' but project is located at root level 'FIlms.csproj'",
+      "filePath": "/modernize-data/studio-data/TNT1001/APP2698/transformed-code/841/studio-workspace/ASP8/FIlms.sln",
+      "lineNumber": 6,
+      "errorMessage": "error MSB3202: The project file '/modernize-data/studio-data/TNT1001/APP2698/transformed-code/841/studio-workspace/ASP8/FIlms/FIlms.csproj' was not found.",
+      "originalCode": "Project(\"{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}\") = \"FIlms\", \"FIlms\\FIlms.csproj\", \"{1FD9E4B4-5821-4232-9A22-CCF2E559FDD2}\"",
+      "fixedCode": "Project(\"{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}\") = \"FIlms\", \"FIlms.csproj\", \"{1FD9E4B4-5821-4232-9A22-CCF2E559FDD2}\"",
+      "status": "fixed",
+      "impact": "Solution file now correctly references project file location",
+      "remediation": "Updated project path in solution file from 'FIlms\\FIlms.csproj' to 'FIlms.csproj'",
+      "manualFixRequired": false
+    },
+    {
+      "id": "issue-2",
+      "severity": "critical",
+      "category": "build-configuration",
+      "title": "Missing Microsoft.WebApplication.targets file",
+      "description": "Project imports Microsoft.WebApplication.targets which does not exist in .NET 8 SDK",
+      "filePath": "/modernize-data/studio-data/TNT1001/APP2698/transformed-code/841/studio-workspace/ASP8/FIlms.csproj",
+      "lineNumber": 517,
+      "errorMessage": "error MSB4019: The imported project '/usr/share/dotnet/sdk/8.0.416/Microsoft/VisualStudio/v17.0/WebApplications/Microsoft.WebApplication.targets' was not found.",
+      "originalCode": "  <Import Project=\"$(VSToolsPath)\\WebApplications\\Microsoft.WebApplication.targets\" Condition=\"'$(VSToolsPath)' != ''\" />\n  <Import Project=\"$(MSBuildExtensionsPath32)\\Microsoft\\VisualStudio\\v10.0\\WebApplications\\Microsoft.WebApplication.targets\" Condition=\"false\" />",
+      "fixedCode": "<!-- Removed Visual Studio WebApplication.targets imports - not needed for .NET SDK build -->",
+      "status": "fixed",
+      "impact": "Removed incompatible Visual Studio-specific imports",
+      "remediation": "Removed Visual Studio WebApplication.targets imports that are not compatible with dotnet CLI",
+      "manualFixRequired": false
+    },
+    {
+      "id": "issue-3",
+      "severity": "critical",
+      "category": "target-framework",
+      "title": ".NET Framework 4.6/4.8 reference assemblies not available",
+      "description": "Project targets .NET Framework 4.6/4.8 which requires Windows and is incompatible with Linux environment running .NET 8 SDK. This is a legacy ASP.NET Web Forms application that cannot be built on Linux.",
+      "filePath": "/modernize-data/studio-data/TNT1001/APP2698/transformed-code/841/studio-workspace/ASP8/FIlms.csproj",
+      "lineNumber": 16,
+      "errorMessage": "error MSB3644: The reference assemblies for .NETFramework,Version=v4.8 were not found. To resolve this, install the Developer Pack (SDK/Targeting Pack) for this framework version or retarget your application.",
+      "originalCode": "<TargetFrameworkVersion>v4.8</TargetFrameworkVersion>",
+      "fixedCode": null,
+      "status": "failed",
+      "impact": "Build cannot proceed - requires full application migration",
+      "remediation": null,
+      "manualFixRequired": true
+    }
+  ],
+  "fixes": [
+    {
+      "id": "fix-1",
+      "issueId": "issue-1",
+      "filePath": "/modernize-data/studio-data/TNT1001/APP2698/transformed-code/841/studio-workspace/ASP8/FIlms.sln",
+      "modificationType": "edited",
+      "originalCode": "Project(\"{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}\") = \"FIlms\", \"FIlms\\FIlms.csproj\", \"{1FD9E4B4-5821-4232-9A22-CCF2E559FDD2}\"",
+      "fixedCode": "Project(\"{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}\") = \"FIlms\", \"FIlms.csproj\", \"{1FD9E4B4-5821-4232-9A22-CCF2E559FDD2}\"",
+      "status": "applied",
+      "linesChanged": 1,
+      "impact": "Solution file can now locate and load the project file"
+    },
+    {
+      "id": "fix-2",
+      "issueId": "issue-2",
+      "filePath": "/modernize-data/studio-data/TNT1001/APP2698/transformed-code/841/studio-workspace/ASP8/FIlms.csproj",
+      "modificationType": "edited",
+      "originalCode": "  <Import Project=\"$(MSBuildBinPath)\\Microsoft.CSharp.targets\" />\n  <Import Project=\"$(VSToolsPath)\\WebApplications\\Microsoft.WebApplication.targets\" Condition=\"'$(VSToolsPath)' != ''\" />\n  <Import Project=\"$(MSBuildExtensionsPath32)\\Microsoft\\VisualStudio\\v10.0\\WebApplications\\Microsoft.WebApplication.targets\" Condition=\"false\" />",
+      "fixedCode": "  <Import Project=\"$(MSBuildBinPath)\\Microsoft.CSharp.targets\" />",
+      "status": "applied",
+      "linesChanged": 2,
+      "impact": "Removed Visual Studio-specific imports that do not exist in .NET SDK"
+    }
+  ],
+  "failedIssues": [
+    {
+      "id": "issue-3",
+      "title": ".NET Framework 4.8 not available on Linux",
+      "category": "target-framework",
+      "severity": "critical",
+      "filePath": "/modernize-data/studio-data/TNT1001/APP2698/transformed-code/841/studio-workspace/ASP8/FIlms.csproj",
+      "failureReason": "This is a legacy ASP.NET Web Forms application targeting .NET Framework 4.8, which is Windows-only and not supported on Linux. The application uses technologies (ASP.NET Web Forms, EntityFramework 5.0, System.Web.UI) that do not exist in modern .NET (Core/.NET 5+).",
+      "errorDetails": "error MSB3644: The reference assemblies for .NETFramework,Version=v4.8 were not found. The .NET Framework is Windows-only and cannot be installed on Linux systems. This project requires significant architectural changes to migrate to .NET 8.",
+      "manualFixRequired": true,
+      "suggestedApproach": "This application requires a complete migration from ASP.NET Web Forms (.NET Framework) to ASP.NET Core (.NET 8). This involves:\n1. Migrate from Web Forms to Razor Pages or MVC\n2. Update EntityFramework 5.0 to EntityFramework Core 8.0\n3. Replace System.Web.UI controls with modern equivalents\n4. Convert to SDK-style project format\n5. Update all NuGet packages to .NET 8 compatible versions\n6. Rewrite authentication/authorization using ASP.NET Core Identity\n7. Replace legacy packages (DotNetOpenAuth, AjaxControlToolkit) with modern alternatives\n\nThis is NOT a simple build fix but requires significant business logic changes and application re-architecture. Consider using Microsoft's .NET Upgrade Assistant tool or manual migration."
+    }
+  ],
+  "buildConfiguration": {
+    "buildType": "dotnet",
+    "dotnetVersion": "net48",
+    "buildToolVersion": "8.0.416",
+    "issuesFound": [
+      "Solution file project path mismatch",
+      "Missing Microsoft.WebApplication.targets import",
+      ".NET Framework 4.8 reference assemblies not available on Linux",
+      "Legacy ASP.NET Web Forms project incompatible with .NET 8 SDK on Linux"
+    ],
+    "fixesApplied": [
+      "Corrected solution file project path reference",
+      "Removed incompatible Visual Studio WebApplication.targets imports"
+    ]
+  },
+  "dependencies": {
+    "issuesFixed": [],
+    "issuesRemaining": [
+      {
+        "packageId": "AjaxControlToolkit",
+        "version": "16.1.1.0",
+        "issue": "Only compatible with .NET Framework, not available for .NET Core/.NET 8",
+        "reason": "Requires application migration to modern framework"
+      },
+      {
+        "packageId": "EntityFramework",
+        "version": "5.0.0",
+        "issue": "Legacy Entity Framework, needs migration to EntityFramework Core",
+        "reason": "Requires application migration and data access layer rewrite"
+      },
+      {
+        "packageId": "DotNetOpenAuth.*",
+        "version": "4.1.4.12333",
+        "issue": "Obsolete authentication library, not compatible with .NET Core/.NET 8",
+        "reason": "Requires authentication system migration to ASP.NET Core Identity or modern OAuth libraries"
+      },
+      {
+        "packageId": "System.Web.* packages",
+        "version": "various",
+        "issue": "System.Web namespace does not exist in .NET Core/.NET 8",
+        "reason": "Requires migration to ASP.NET Core equivalents"
+      }
+    ]
+  },
+  "recommendations": [
+    "CRITICAL: This ASP.NET Web Forms application cannot be built on Linux with .NET 8 SDK without a complete migration",
+    "Use Microsoft's .NET Upgrade Assistant tool to analyze migration path: https://dotnet.microsoft.com/platform/upgrade-assistant",
+    "Consider migrating to ASP.NET Core Razor Pages or MVC instead of Web Forms",
+    "Migrate EntityFramework 5.0 to EntityFramework Core 8.0",
+    "Replace obsolete packages (DotNetOpenAuth, AjaxControlToolkit) with modern alternatives",
+    "If Windows environment is available, build with Visual Studio 2022 and .NET Framework 4.8 Developer Pack",
+    "Alternatively, set up Windows build server for .NET Framework projects"
+  ],
+  "metadata": {
+    "projectPath": "/modernize-data/studio-data/TNT1001/APP2698/transformed-code/841/studio-workspace/ASP8",
+    "buildType": "dotnet",
+    "dotnetVersion": "net48",
+    "timestamp": "2025-12-31T12:07:00Z",
+    "executionTimeMs": 0,
+    "claudeModel": "us.anthropic.claude-sonnet-4-5-20250929-v1:0"
+  }
+}
