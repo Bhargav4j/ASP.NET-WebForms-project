@@ -1,0 +1,886 @@
+SF:/modernize-data/studio-data/TNT1001/APP2710/transformed-code/849/studio-workspace/ASP11/src/Films.Domain/Entities/Actor.cs
+FN:7,System.Int32 Films.Domain.Entities.Actor::get_Id()
+FNDA:0,System.Int32 Films.Domain.Entities.Actor::get_Id()
+DA:8,0
+FN:8,System.String Films.Domain.Entities.Actor::get_FirstName()
+FNDA:0,System.String Films.Domain.Entities.Actor::get_FirstName()
+DA:9,0
+FN:9,System.String Films.Domain.Entities.Actor::get_LastName()
+FNDA:0,System.String Films.Domain.Entities.Actor::get_LastName()
+DA:10,0
+FN:10,System.Nullable`1<System.Int32> Films.Domain.Entities.Actor::get_SexId()
+FNDA:0,System.Nullable`1<System.Int32> Films.Domain.Entities.Actor::get_SexId()
+DA:11,0
+FN:11,System.DateTime Films.Domain.Entities.Actor::get_CreatedDate()
+FNDA:0,System.DateTime Films.Domain.Entities.Actor::get_CreatedDate()
+DA:12,0
+FN:12,System.Nullable`1<System.DateTime> Films.Domain.Entities.Actor::get_ModifiedDate()
+FNDA:0,System.Nullable`1<System.DateTime> Films.Domain.Entities.Actor::get_ModifiedDate()
+DA:13,0
+FN:13,System.Boolean Films.Domain.Entities.Actor::get_IsActive()
+FNDA:0,System.Boolean Films.Domain.Entities.Actor::get_IsActive()
+DA:14,0
+FN:14,System.String Films.Domain.Entities.Actor::get_CreatedBy()
+FNDA:0,System.String Films.Domain.Entities.Actor::get_CreatedBy()
+DA:15,0
+FN:15,System.String Films.Domain.Entities.Actor::get_ModifiedBy()
+FNDA:0,System.String Films.Domain.Entities.Actor::get_ModifiedBy()
+DA:16,0
+FN:18,Films.Domain.Entities.Sex Films.Domain.Entities.Actor::get_Sex()
+FNDA:0,Films.Domain.Entities.Sex Films.Domain.Entities.Actor::get_Sex()
+DA:19,0
+FN:19,System.Collections.Generic.ICollection`1<Films.Domain.Entities.RefAF> Films.Domain.Entities.Actor::get_RefAFs()
+FNDA:0,System.Collections.Generic.ICollection`1<Films.Domain.Entities.RefAF> Films.Domain.Entities.Actor::get_RefAFs()
+DA:20,0
+LF:11
+LH:0
+BRF:0
+BRH:0
+FNF:11
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP2710/transformed-code/849/studio-workspace/ASP11/src/Films.Domain/Entities/Director.cs
+FN:7,System.Int32 Films.Domain.Entities.Director::get_Id()
+FNDA:0,System.Int32 Films.Domain.Entities.Director::get_Id()
+DA:8,0
+FN:8,System.String Films.Domain.Entities.Director::get_FirstName()
+FNDA:0,System.String Films.Domain.Entities.Director::get_FirstName()
+DA:9,0
+FN:9,System.String Films.Domain.Entities.Director::get_LastName()
+FNDA:0,System.String Films.Domain.Entities.Director::get_LastName()
+DA:10,0
+FN:10,System.Nullable`1<System.Int32> Films.Domain.Entities.Director::get_SexId()
+FNDA:0,System.Nullable`1<System.Int32> Films.Domain.Entities.Director::get_SexId()
+DA:11,0
+FN:11,System.DateTime Films.Domain.Entities.Director::get_CreatedDate()
+FNDA:0,System.DateTime Films.Domain.Entities.Director::get_CreatedDate()
+DA:12,0
+FN:12,System.Nullable`1<System.DateTime> Films.Domain.Entities.Director::get_ModifiedDate()
+FNDA:0,System.Nullable`1<System.DateTime> Films.Domain.Entities.Director::get_ModifiedDate()
+DA:13,0
+FN:13,System.Boolean Films.Domain.Entities.Director::get_IsActive()
+FNDA:0,System.Boolean Films.Domain.Entities.Director::get_IsActive()
+DA:14,0
+FN:14,System.String Films.Domain.Entities.Director::get_CreatedBy()
+FNDA:0,System.String Films.Domain.Entities.Director::get_CreatedBy()
+DA:15,0
+FN:15,System.String Films.Domain.Entities.Director::get_ModifiedBy()
+FNDA:0,System.String Films.Domain.Entities.Director::get_ModifiedBy()
+DA:16,0
+FN:18,Films.Domain.Entities.Sex Films.Domain.Entities.Director::get_Sex()
+FNDA:0,Films.Domain.Entities.Sex Films.Domain.Entities.Director::get_Sex()
+DA:19,0
+FN:19,System.Collections.Generic.ICollection`1<Films.Domain.Entities.RefDAF> Films.Domain.Entities.Director::get_RefDAFs()
+FNDA:0,System.Collections.Generic.ICollection`1<Films.Domain.Entities.RefDAF> Films.Domain.Entities.Director::get_RefDAFs()
+DA:20,0
+LF:11
+LH:0
+BRF:0
+BRH:0
+FNF:11
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP2710/transformed-code/849/studio-workspace/ASP11/src/Films.Domain/Entities/Film.cs
+FN:7,System.Int32 Films.Domain.Entities.Film::get_Id()
+FNDA:4,System.Int32 Films.Domain.Entities.Film::get_Id()
+DA:8,4
+FN:8,System.String Films.Domain.Entities.Film::get_Name()
+FNDA:10,System.String Films.Domain.Entities.Film::get_Name()
+DA:9,10
+FN:9,System.String Films.Domain.Entities.Film::get_Description()
+FNDA:0,System.String Films.Domain.Entities.Film::get_Description()
+DA:10,0
+FN:10,System.DateTime Films.Domain.Entities.Film::get_CreatedDate()
+FNDA:0,System.DateTime Films.Domain.Entities.Film::get_CreatedDate()
+DA:11,0
+FN:11,System.Nullable`1<System.DateTime> Films.Domain.Entities.Film::get_ModifiedDate()
+FNDA:0,System.Nullable`1<System.DateTime> Films.Domain.Entities.Film::get_ModifiedDate()
+DA:12,0
+FN:12,System.Boolean Films.Domain.Entities.Film::get_IsActive()
+FNDA:0,System.Boolean Films.Domain.Entities.Film::get_IsActive()
+DA:13,0
+FN:13,System.String Films.Domain.Entities.Film::get_CreatedBy()
+FNDA:5,System.String Films.Domain.Entities.Film::get_CreatedBy()
+DA:14,5
+FN:14,System.String Films.Domain.Entities.Film::get_ModifiedBy()
+FNDA:0,System.String Films.Domain.Entities.Film::get_ModifiedBy()
+DA:15,0
+FN:17,System.Collections.Generic.ICollection`1<Films.Domain.Entities.RefAF> Films.Domain.Entities.Film::get_RefAFs()
+FNDA:5,System.Collections.Generic.ICollection`1<Films.Domain.Entities.RefAF> Films.Domain.Entities.Film::get_RefAFs()
+DA:18,5
+FN:18,System.Collections.Generic.ICollection`1<Films.Domain.Entities.RefDAF> Films.Domain.Entities.Film::get_RefDAFs()
+FNDA:5,System.Collections.Generic.ICollection`1<Films.Domain.Entities.RefDAF> Films.Domain.Entities.Film::get_RefDAFs()
+DA:19,5
+LF:10
+LH:5
+BRF:0
+BRH:0
+FNF:10
+FNH:5
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP2710/transformed-code/849/studio-workspace/ASP11/src/Films.Domain/Entities/RefAF.cs
+FN:7,System.Int32 Films.Domain.Entities.RefAF::get_Id()
+FNDA:0,System.Int32 Films.Domain.Entities.RefAF::get_Id()
+DA:8,0
+FN:8,System.Int32 Films.Domain.Entities.RefAF::get_ActorId()
+FNDA:0,System.Int32 Films.Domain.Entities.RefAF::get_ActorId()
+DA:9,0
+FN:9,System.Int32 Films.Domain.Entities.RefAF::get_FilmId()
+FNDA:0,System.Int32 Films.Domain.Entities.RefAF::get_FilmId()
+DA:10,0
+FN:10,System.DateTime Films.Domain.Entities.RefAF::get_CreatedDate()
+FNDA:0,System.DateTime Films.Domain.Entities.RefAF::get_CreatedDate()
+DA:11,0
+FN:11,System.Boolean Films.Domain.Entities.RefAF::get_IsActive()
+FNDA:0,System.Boolean Films.Domain.Entities.RefAF::get_IsActive()
+DA:12,0
+FN:12,System.String Films.Domain.Entities.RefAF::get_CreatedBy()
+FNDA:0,System.String Films.Domain.Entities.RefAF::get_CreatedBy()
+DA:13,0
+FN:15,Films.Domain.Entities.Actor Films.Domain.Entities.RefAF::get_Actor()
+FNDA:0,Films.Domain.Entities.Actor Films.Domain.Entities.RefAF::get_Actor()
+DA:16,0
+FN:16,Films.Domain.Entities.Film Films.Domain.Entities.RefAF::get_Film()
+FNDA:0,Films.Domain.Entities.Film Films.Domain.Entities.RefAF::get_Film()
+DA:17,0
+LF:8
+LH:0
+BRF:0
+BRH:0
+FNF:8
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP2710/transformed-code/849/studio-workspace/ASP11/src/Films.Domain/Entities/RefDAF.cs
+FN:7,System.Int32 Films.Domain.Entities.RefDAF::get_Id()
+FNDA:0,System.Int32 Films.Domain.Entities.RefDAF::get_Id()
+DA:8,0
+FN:8,System.Int32 Films.Domain.Entities.RefDAF::get_DirectorId()
+FNDA:0,System.Int32 Films.Domain.Entities.RefDAF::get_DirectorId()
+DA:9,0
+FN:9,System.Int32 Films.Domain.Entities.RefDAF::get_FilmId()
+FNDA:0,System.Int32 Films.Domain.Entities.RefDAF::get_FilmId()
+DA:10,0
+FN:10,System.DateTime Films.Domain.Entities.RefDAF::get_CreatedDate()
+FNDA:0,System.DateTime Films.Domain.Entities.RefDAF::get_CreatedDate()
+DA:11,0
+FN:11,System.Boolean Films.Domain.Entities.RefDAF::get_IsActive()
+FNDA:0,System.Boolean Films.Domain.Entities.RefDAF::get_IsActive()
+DA:12,0
+FN:12,System.String Films.Domain.Entities.RefDAF::get_CreatedBy()
+FNDA:0,System.String Films.Domain.Entities.RefDAF::get_CreatedBy()
+DA:13,0
+FN:15,Films.Domain.Entities.Director Films.Domain.Entities.RefDAF::get_Director()
+FNDA:0,Films.Domain.Entities.Director Films.Domain.Entities.RefDAF::get_Director()
+DA:16,0
+FN:16,Films.Domain.Entities.Film Films.Domain.Entities.RefDAF::get_Film()
+FNDA:0,Films.Domain.Entities.Film Films.Domain.Entities.RefDAF::get_Film()
+DA:17,0
+LF:8
+LH:0
+BRF:0
+BRH:0
+FNF:8
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP2710/transformed-code/849/studio-workspace/ASP11/src/Films.Domain/Entities/Right.cs
+FN:7,System.Int32 Films.Domain.Entities.Right::get_Id()
+FNDA:0,System.Int32 Films.Domain.Entities.Right::get_Id()
+DA:8,0
+FN:8,System.String Films.Domain.Entities.Right::get_Name()
+FNDA:0,System.String Films.Domain.Entities.Right::get_Name()
+DA:9,0
+FN:9,System.String Films.Domain.Entities.Right::get_Description()
+FNDA:0,System.String Films.Domain.Entities.Right::get_Description()
+DA:10,0
+FN:10,System.DateTime Films.Domain.Entities.Right::get_CreatedDate()
+FNDA:0,System.DateTime Films.Domain.Entities.Right::get_CreatedDate()
+DA:11,0
+FN:11,System.Nullable`1<System.DateTime> Films.Domain.Entities.Right::get_ModifiedDate()
+FNDA:0,System.Nullable`1<System.DateTime> Films.Domain.Entities.Right::get_ModifiedDate()
+DA:12,0
+FN:12,System.Boolean Films.Domain.Entities.Right::get_IsActive()
+FNDA:0,System.Boolean Films.Domain.Entities.Right::get_IsActive()
+DA:13,0
+FN:13,System.String Films.Domain.Entities.Right::get_CreatedBy()
+FNDA:0,System.String Films.Domain.Entities.Right::get_CreatedBy()
+DA:14,0
+FN:14,System.String Films.Domain.Entities.Right::get_ModifiedBy()
+FNDA:0,System.String Films.Domain.Entities.Right::get_ModifiedBy()
+DA:15,0
+FN:17,System.Collections.Generic.ICollection`1<Films.Domain.Entities.UserRight> Films.Domain.Entities.Right::get_UserRights()
+FNDA:0,System.Collections.Generic.ICollection`1<Films.Domain.Entities.UserRight> Films.Domain.Entities.Right::get_UserRights()
+DA:18,0
+LF:9
+LH:0
+BRF:0
+BRH:0
+FNF:9
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP2710/transformed-code/849/studio-workspace/ASP11/src/Films.Domain/Entities/Sex.cs
+FN:7,System.Int32 Films.Domain.Entities.Sex::get_Id()
+FNDA:0,System.Int32 Films.Domain.Entities.Sex::get_Id()
+DA:8,0
+FN:8,System.String Films.Domain.Entities.Sex::get_Name()
+FNDA:0,System.String Films.Domain.Entities.Sex::get_Name()
+DA:9,0
+FN:9,System.DateTime Films.Domain.Entities.Sex::get_CreatedDate()
+FNDA:0,System.DateTime Films.Domain.Entities.Sex::get_CreatedDate()
+DA:10,0
+FN:10,System.Nullable`1<System.DateTime> Films.Domain.Entities.Sex::get_ModifiedDate()
+FNDA:0,System.Nullable`1<System.DateTime> Films.Domain.Entities.Sex::get_ModifiedDate()
+DA:11,0
+FN:11,System.Boolean Films.Domain.Entities.Sex::get_IsActive()
+FNDA:0,System.Boolean Films.Domain.Entities.Sex::get_IsActive()
+DA:12,0
+FN:12,System.String Films.Domain.Entities.Sex::get_CreatedBy()
+FNDA:0,System.String Films.Domain.Entities.Sex::get_CreatedBy()
+DA:13,0
+FN:13,System.String Films.Domain.Entities.Sex::get_ModifiedBy()
+FNDA:0,System.String Films.Domain.Entities.Sex::get_ModifiedBy()
+DA:14,0
+FN:16,System.Collections.Generic.ICollection`1<Films.Domain.Entities.Actor> Films.Domain.Entities.Sex::get_Actors()
+FNDA:0,System.Collections.Generic.ICollection`1<Films.Domain.Entities.Actor> Films.Domain.Entities.Sex::get_Actors()
+DA:17,0
+FN:17,System.Collections.Generic.ICollection`1<Films.Domain.Entities.Director> Films.Domain.Entities.Sex::get_Directors()
+FNDA:0,System.Collections.Generic.ICollection`1<Films.Domain.Entities.Director> Films.Domain.Entities.Sex::get_Directors()
+DA:18,0
+LF:9
+LH:0
+BRF:0
+BRH:0
+FNF:9
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP2710/transformed-code/849/studio-workspace/ASP11/src/Films.Domain/Entities/TypeUser.cs
+FN:7,System.Int32 Films.Domain.Entities.TypeUser::get_Id()
+FNDA:0,System.Int32 Films.Domain.Entities.TypeUser::get_Id()
+DA:8,0
+FN:8,System.String Films.Domain.Entities.TypeUser::get_Name()
+FNDA:0,System.String Films.Domain.Entities.TypeUser::get_Name()
+DA:9,0
+FN:9,System.DateTime Films.Domain.Entities.TypeUser::get_CreatedDate()
+FNDA:0,System.DateTime Films.Domain.Entities.TypeUser::get_CreatedDate()
+DA:10,0
+FN:10,System.Nullable`1<System.DateTime> Films.Domain.Entities.TypeUser::get_ModifiedDate()
+FNDA:0,System.Nullable`1<System.DateTime> Films.Domain.Entities.TypeUser::get_ModifiedDate()
+DA:11,0
+FN:11,System.Boolean Films.Domain.Entities.TypeUser::get_IsActive()
+FNDA:0,System.Boolean Films.Domain.Entities.TypeUser::get_IsActive()
+DA:12,0
+FN:12,System.String Films.Domain.Entities.TypeUser::get_CreatedBy()
+FNDA:0,System.String Films.Domain.Entities.TypeUser::get_CreatedBy()
+DA:13,0
+FN:13,System.String Films.Domain.Entities.TypeUser::get_ModifiedBy()
+FNDA:0,System.String Films.Domain.Entities.TypeUser::get_ModifiedBy()
+DA:14,0
+FN:16,System.Collections.Generic.ICollection`1<Films.Domain.Entities.User> Films.Domain.Entities.TypeUser::get_Users()
+FNDA:0,System.Collections.Generic.ICollection`1<Films.Domain.Entities.User> Films.Domain.Entities.TypeUser::get_Users()
+DA:17,0
+LF:8
+LH:0
+BRF:0
+BRH:0
+FNF:8
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP2710/transformed-code/849/studio-workspace/ASP11/src/Films.Domain/Entities/User.cs
+FN:7,System.Int32 Films.Domain.Entities.User::get_Id()
+FNDA:0,System.Int32 Films.Domain.Entities.User::get_Id()
+DA:8,0
+FN:8,System.String Films.Domain.Entities.User::get_Username()
+FNDA:0,System.String Films.Domain.Entities.User::get_Username()
+DA:9,0
+FN:9,System.String Films.Domain.Entities.User::get_Password()
+FNDA:0,System.String Films.Domain.Entities.User::get_Password()
+DA:10,0
+FN:10,System.String Films.Domain.Entities.User::get_Email()
+FNDA:0,System.String Films.Domain.Entities.User::get_Email()
+DA:11,0
+FN:11,System.Nullable`1<System.Int32> Films.Domain.Entities.User::get_TypeUserId()
+FNDA:0,System.Nullable`1<System.Int32> Films.Domain.Entities.User::get_TypeUserId()
+DA:12,0
+FN:12,System.DateTime Films.Domain.Entities.User::get_CreatedDate()
+FNDA:0,System.DateTime Films.Domain.Entities.User::get_CreatedDate()
+DA:13,0
+FN:13,System.Nullable`1<System.DateTime> Films.Domain.Entities.User::get_ModifiedDate()
+FNDA:0,System.Nullable`1<System.DateTime> Films.Domain.Entities.User::get_ModifiedDate()
+DA:14,0
+FN:14,System.Boolean Films.Domain.Entities.User::get_IsActive()
+FNDA:0,System.Boolean Films.Domain.Entities.User::get_IsActive()
+DA:15,0
+FN:15,System.String Films.Domain.Entities.User::get_CreatedBy()
+FNDA:0,System.String Films.Domain.Entities.User::get_CreatedBy()
+DA:16,0
+FN:16,System.String Films.Domain.Entities.User::get_ModifiedBy()
+FNDA:0,System.String Films.Domain.Entities.User::get_ModifiedBy()
+DA:17,0
+FN:19,Films.Domain.Entities.TypeUser Films.Domain.Entities.User::get_TypeUser()
+FNDA:0,Films.Domain.Entities.TypeUser Films.Domain.Entities.User::get_TypeUser()
+DA:20,0
+FN:20,System.Collections.Generic.ICollection`1<Films.Domain.Entities.UserRight> Films.Domain.Entities.User::get_UserRights()
+FNDA:0,System.Collections.Generic.ICollection`1<Films.Domain.Entities.UserRight> Films.Domain.Entities.User::get_UserRights()
+DA:21,0
+LF:12
+LH:0
+BRF:0
+BRH:0
+FNF:12
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP2710/transformed-code/849/studio-workspace/ASP11/src/Films.Domain/Entities/UserRight.cs
+FN:7,System.Int32 Films.Domain.Entities.UserRight::get_Id()
+FNDA:0,System.Int32 Films.Domain.Entities.UserRight::get_Id()
+DA:8,0
+FN:8,System.Int32 Films.Domain.Entities.UserRight::get_UserId()
+FNDA:0,System.Int32 Films.Domain.Entities.UserRight::get_UserId()
+DA:9,0
+FN:9,System.Int32 Films.Domain.Entities.UserRight::get_RightId()
+FNDA:0,System.Int32 Films.Domain.Entities.UserRight::get_RightId()
+DA:10,0
+FN:10,System.DateTime Films.Domain.Entities.UserRight::get_CreatedDate()
+FNDA:0,System.DateTime Films.Domain.Entities.UserRight::get_CreatedDate()
+DA:11,0
+FN:11,System.Boolean Films.Domain.Entities.UserRight::get_IsActive()
+FNDA:0,System.Boolean Films.Domain.Entities.UserRight::get_IsActive()
+DA:12,0
+FN:12,System.String Films.Domain.Entities.UserRight::get_CreatedBy()
+FNDA:0,System.String Films.Domain.Entities.UserRight::get_CreatedBy()
+DA:13,0
+FN:15,Films.Domain.Entities.User Films.Domain.Entities.UserRight::get_User()
+FNDA:0,Films.Domain.Entities.User Films.Domain.Entities.UserRight::get_User()
+DA:16,0
+FN:16,Films.Domain.Entities.Right Films.Domain.Entities.UserRight::get_Right()
+FNDA:0,Films.Domain.Entities.Right Films.Domain.Entities.UserRight::get_Right()
+DA:17,0
+LF:8
+LH:0
+BRF:0
+BRH:0
+FNF:8
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP2710/transformed-code/849/studio-workspace/ASP11/src/Films.Application/Services/ActorService.cs
+FN:18,System.Void Films.Application.Services.ActorService::.ctor(Films.Domain.Interfaces.Repositories.IActorRepository,AutoMapper.IMapper,Microsoft.Extensions.Logging.ILogger`1<Films.Application.Services.ActorService>)
+FNDA:0,System.Void Films.Application.Services.ActorService::.ctor(Films.Domain.Interfaces.Repositories.IActorRepository,AutoMapper.IMapper,Microsoft.Extensions.Logging.ILogger`1<Films.Application.Services.ActorService>)
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+FN:59,System.Void Films.Application.Services.ActorService/<CreateAsync>d__6::MoveNext()
+FNDA:0,System.Void Films.Application.Services.ActorService/<CreateAsync>d__6::MoveNext()
+DA:60,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:73,0
+FN:103,System.Void Films.Application.Services.ActorService/<DeleteAsync>d__8::MoveNext()
+FNDA:0,System.Void Films.Application.Services.ActorService/<DeleteAsync>d__8::MoveNext()
+DA:104,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:115,0
+FN:29,System.Void Films.Application.Services.ActorService/<GetAllAsync>d__4::MoveNext()
+FNDA:0,System.Void Films.Application.Services.ActorService/<GetAllAsync>d__4::MoveNext()
+DA:30,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:42,0
+FN:44,System.Void Films.Application.Services.ActorService/<GetByIdAsync>d__5::MoveNext()
+FNDA:0,System.Void Films.Application.Services.ActorService/<GetByIdAsync>d__5::MoveNext()
+DA:45,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:57,0
+BRDA:50,214,0,0
+BRDA:50,214,1,0
+FN:117,System.Void Films.Application.Services.ActorService/<SearchAsync>d__9::MoveNext()
+FNDA:0,System.Void Films.Application.Services.ActorService/<SearchAsync>d__9::MoveNext()
+DA:118,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:130,0
+FN:75,System.Void Films.Application.Services.ActorService/<UpdateAsync>d__7::MoveNext()
+FNDA:0,System.Void Films.Application.Services.ActorService/<UpdateAsync>d__7::MoveNext()
+DA:76,0
+DA:78,0
+DA:79,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:101,0
+BRDA:82,234,0,0
+BRDA:82,234,1,0
+LF:80
+LH:0
+BRF:4
+BRH:0
+FNF:7
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP2710/transformed-code/849/studio-workspace/ASP11/src/Films.Application/Services/DirectorService.cs
+FN:18,System.Void Films.Application.Services.DirectorService::.ctor(Films.Domain.Interfaces.Repositories.IDirectorRepository,AutoMapper.IMapper,Microsoft.Extensions.Logging.ILogger`1<Films.Application.Services.DirectorService>)
+FNDA:0,System.Void Films.Application.Services.DirectorService::.ctor(Films.Domain.Interfaces.Repositories.IDirectorRepository,AutoMapper.IMapper,Microsoft.Extensions.Logging.ILogger`1<Films.Application.Services.DirectorService>)
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+FN:59,System.Void Films.Application.Services.DirectorService/<CreateAsync>d__6::MoveNext()
+FNDA:0,System.Void Films.Application.Services.DirectorService/<CreateAsync>d__6::MoveNext()
+DA:60,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:73,0
+FN:103,System.Void Films.Application.Services.DirectorService/<DeleteAsync>d__8::MoveNext()
+FNDA:0,System.Void Films.Application.Services.DirectorService/<DeleteAsync>d__8::MoveNext()
+DA:104,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:115,0
+FN:29,System.Void Films.Application.Services.DirectorService/<GetAllAsync>d__4::MoveNext()
+FNDA:0,System.Void Films.Application.Services.DirectorService/<GetAllAsync>d__4::MoveNext()
+DA:30,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:42,0
+FN:44,System.Void Films.Application.Services.DirectorService/<GetByIdAsync>d__5::MoveNext()
+FNDA:0,System.Void Films.Application.Services.DirectorService/<GetByIdAsync>d__5::MoveNext()
+DA:45,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:57,0
+BRDA:50,214,0,0
+BRDA:50,214,1,0
+FN:117,System.Void Films.Application.Services.DirectorService/<SearchAsync>d__9::MoveNext()
+FNDA:0,System.Void Films.Application.Services.DirectorService/<SearchAsync>d__9::MoveNext()
+DA:118,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:130,0
+FN:75,System.Void Films.Application.Services.DirectorService/<UpdateAsync>d__7::MoveNext()
+FNDA:0,System.Void Films.Application.Services.DirectorService/<UpdateAsync>d__7::MoveNext()
+DA:76,0
+DA:78,0
+DA:79,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:101,0
+BRDA:82,234,0,0
+BRDA:82,234,1,0
+LF:80
+LH:0
+BRF:4
+BRH:0
+FNF:7
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP2710/transformed-code/849/studio-workspace/ASP11/src/Films.Application/Services/FilmService.cs
+FN:18,System.Void Films.Application.Services.FilmService::.ctor(Films.Domain.Interfaces.Repositories.IFilmRepository,AutoMapper.IMapper,Microsoft.Extensions.Logging.ILogger`1<Films.Application.Services.FilmService>)
+FNDA:3,System.Void Films.Application.Services.FilmService::.ctor(Films.Domain.Interfaces.Repositories.IFilmRepository,AutoMapper.IMapper,Microsoft.Extensions.Logging.ILogger`1<Films.Application.Services.FilmService>)
+DA:19,3
+DA:20,3
+DA:21,3
+DA:22,3
+DA:23,3
+DA:24,3
+DA:25,3
+DA:26,3
+DA:27,3
+FN:59,System.Void Films.Application.Services.FilmService/<CreateAsync>d__6::MoveNext()
+FNDA:1,System.Void Films.Application.Services.FilmService/<CreateAsync>d__6::MoveNext()
+DA:60,1
+DA:62,1
+DA:63,1
+DA:64,1
+DA:65,1
+DA:66,1
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:73,1
+FN:102,System.Void Films.Application.Services.FilmService/<DeleteAsync>d__8::MoveNext()
+FNDA:0,System.Void Films.Application.Services.FilmService/<DeleteAsync>d__8::MoveNext()
+DA:103,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:114,0
+FN:29,System.Void Films.Application.Services.FilmService/<GetAllAsync>d__4::MoveNext()
+FNDA:1,System.Void Films.Application.Services.FilmService/<GetAllAsync>d__4::MoveNext()
+DA:30,1
+DA:32,1
+DA:33,1
+DA:34,1
+DA:35,1
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:42,1
+FN:44,System.Void Films.Application.Services.FilmService/<GetByIdAsync>d__5::MoveNext()
+FNDA:1,System.Void Films.Application.Services.FilmService/<GetByIdAsync>d__5::MoveNext()
+DA:45,1
+DA:47,1
+DA:48,1
+DA:49,1
+DA:50,1
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:57,1
+BRDA:50,214,0,0
+BRDA:50,214,1,1
+FN:116,System.Void Films.Application.Services.FilmService/<SearchAsync>d__9::MoveNext()
+FNDA:0,System.Void Films.Application.Services.FilmService/<SearchAsync>d__9::MoveNext()
+DA:117,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:129,0
+FN:75,System.Void Films.Application.Services.FilmService/<UpdateAsync>d__7::MoveNext()
+FNDA:0,System.Void Films.Application.Services.FilmService/<UpdateAsync>d__7::MoveNext()
+DA:76,0
+DA:78,0
+DA:79,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:100,0
+BRDA:82,234,0,0
+BRDA:82,234,1,0
+LF:79
+LH:28
+BRF:4
+BRH:1
+FNF:7
+FNH:4
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP2710/transformed-code/849/studio-workspace/ASP11/src/Films.Application/Mappings/MappingProfile.cs
+FN:11,System.Void Films.Application.Mappings.MappingProfile::.ctor()
+FNDA:0,System.Void Films.Application.Mappings.MappingProfile::.ctor()
+DA:12,0
+DA:13,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+LF:29
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP2710/transformed-code/849/studio-workspace/ASP11/src/Films.Application/Extensions/ServiceCollectionExtensions.cs
+FN:14,Microsoft.Extensions.DependencyInjection.IServiceCollection Films.Application.Extensions.ServiceCollectionExtensions::AddApplicationServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+FNDA:0,Microsoft.Extensions.DependencyInjection.IServiceCollection Films.Application.Extensions.ServiceCollectionExtensions::AddApplicationServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+DA:15,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:28,0
+DA:29,0
+LF:11
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP2710/transformed-code/849/studio-workspace/ASP11/src/Films.Application/DTOs/ActorDto.cs
+FN:7,System.Int32 Films.Application.DTOs.ActorDto::get_Id()
+FNDA:0,System.Int32 Films.Application.DTOs.ActorDto::get_Id()
+DA:8,0
+FN:8,System.String Films.Application.DTOs.ActorDto::get_FirstName()
+FNDA:0,System.String Films.Application.DTOs.ActorDto::get_FirstName()
+DA:9,0
+FN:9,System.String Films.Application.DTOs.ActorDto::get_LastName()
+FNDA:0,System.String Films.Application.DTOs.ActorDto::get_LastName()
+DA:10,0
+FN:10,System.Nullable`1<System.Int32> Films.Application.DTOs.ActorDto::get_SexId()
+FNDA:0,System.Nullable`1<System.Int32> Films.Application.DTOs.ActorDto::get_SexId()
+DA:11,0
+FN:11,System.String Films.Application.DTOs.ActorDto::get_SexName()
+FNDA:0,System.String Films.Application.DTOs.ActorDto::get_SexName()
+DA:12,0
+FN:12,System.DateTime Films.Application.DTOs.ActorDto::get_CreatedDate()
+FNDA:0,System.DateTime Films.Application.DTOs.ActorDto::get_CreatedDate()
+DA:13,0
+FN:13,System.Nullable`1<System.DateTime> Films.Application.DTOs.ActorDto::get_ModifiedDate()
+FNDA:0,System.Nullable`1<System.DateTime> Films.Application.DTOs.ActorDto::get_ModifiedDate()
+DA:14,0
+FN:14,System.Boolean Films.Application.DTOs.ActorDto::get_IsActive()
+FNDA:0,System.Boolean Films.Application.DTOs.ActorDto::get_IsActive()
+DA:15,0
+FN:22,System.String Films.Application.DTOs.ActorCreateDto::get_FirstName()
+FNDA:0,System.String Films.Application.DTOs.ActorCreateDto::get_FirstName()
+DA:23,0
+FN:23,System.String Films.Application.DTOs.ActorCreateDto::get_LastName()
+FNDA:0,System.String Films.Application.DTOs.ActorCreateDto::get_LastName()
+DA:24,0
+FN:24,System.Nullable`1<System.Int32> Films.Application.DTOs.ActorCreateDto::get_SexId()
+FNDA:0,System.Nullable`1<System.Int32> Films.Application.DTOs.ActorCreateDto::get_SexId()
+DA:25,0
+FN:32,System.String Films.Application.DTOs.ActorUpdateDto::get_FirstName()
+FNDA:0,System.String Films.Application.DTOs.ActorUpdateDto::get_FirstName()
+DA:33,0
+FN:33,System.String Films.Application.DTOs.ActorUpdateDto::get_LastName()
+FNDA:0,System.String Films.Application.DTOs.ActorUpdateDto::get_LastName()
+DA:34,0
+FN:34,System.Nullable`1<System.Int32> Films.Application.DTOs.ActorUpdateDto::get_SexId()
+FNDA:0,System.Nullable`1<System.Int32> Films.Application.DTOs.ActorUpdateDto::get_SexId()
+DA:35,0
+FN:35,System.Boolean Films.Application.DTOs.ActorUpdateDto::get_IsActive()
+FNDA:0,System.Boolean Films.Application.DTOs.ActorUpdateDto::get_IsActive()
+DA:36,0
+LF:15
+LH:0
+BRF:0
+BRH:0
+FNF:15
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP2710/transformed-code/849/studio-workspace/ASP11/src/Films.Application/DTOs/DirectorDto.cs
+FN:7,System.Int32 Films.Application.DTOs.DirectorDto::get_Id()
+FNDA:0,System.Int32 Films.Application.DTOs.DirectorDto::get_Id()
+DA:8,0
+FN:8,System.String Films.Application.DTOs.DirectorDto::get_FirstName()
+FNDA:0,System.String Films.Application.DTOs.DirectorDto::get_FirstName()
+DA:9,0
+FN:9,System.String Films.Application.DTOs.DirectorDto::get_LastName()
+FNDA:0,System.String Films.Application.DTOs.DirectorDto::get_LastName()
+DA:10,0
+FN:10,System.Nullable`1<System.Int32> Films.Application.DTOs.DirectorDto::get_SexId()
+FNDA:0,System.Nullable`1<System.Int32> Films.Application.DTOs.DirectorDto::get_SexId()
+DA:11,0
+FN:11,System.String Films.Application.DTOs.DirectorDto::get_SexName()
+FNDA:0,System.String Films.Application.DTOs.DirectorDto::get_SexName()
+DA:12,0
+FN:12,System.DateTime Films.Application.DTOs.DirectorDto::get_CreatedDate()
+FNDA:0,System.DateTime Films.Application.DTOs.DirectorDto::get_CreatedDate()
+DA:13,0
+FN:13,System.Nullable`1<System.DateTime> Films.Application.DTOs.DirectorDto::get_ModifiedDate()
+FNDA:0,System.Nullable`1<System.DateTime> Films.Application.DTOs.DirectorDto::get_ModifiedDate()
+DA:14,0
+FN:14,System.Boolean Films.Application.DTOs.DirectorDto::get_IsActive()
+FNDA:0,System.Boolean Films.Application.DTOs.DirectorDto::get_IsActive()
+DA:15,0
+FN:22,System.String Films.Application.DTOs.DirectorCreateDto::get_FirstName()
+FNDA:0,System.String Films.Application.DTOs.DirectorCreateDto::get_FirstName()
+DA:23,0
+FN:23,System.String Films.Application.DTOs.DirectorCreateDto::get_LastName()
+FNDA:0,System.String Films.Application.DTOs.DirectorCreateDto::get_LastName()
+DA:24,0
+FN:24,System.Nullable`1<System.Int32> Films.Application.DTOs.DirectorCreateDto::get_SexId()
+FNDA:0,System.Nullable`1<System.Int32> Films.Application.DTOs.DirectorCreateDto::get_SexId()
+DA:25,0
+FN:32,System.String Films.Application.DTOs.DirectorUpdateDto::get_FirstName()
+FNDA:0,System.String Films.Application.DTOs.DirectorUpdateDto::get_FirstName()
+DA:33,0
+FN:33,System.String Films.Application.DTOs.DirectorUpdateDto::get_LastName()
+FNDA:0,System.String Films.Application.DTOs.DirectorUpdateDto::get_LastName()
+DA:34,0
+FN:34,System.Nullable`1<System.Int32> Films.Application.DTOs.DirectorUpdateDto::get_SexId()
+FNDA:0,System.Nullable`1<System.Int32> Films.Application.DTOs.DirectorUpdateDto::get_SexId()
+DA:35,0
+FN:35,System.Boolean Films.Application.DTOs.DirectorUpdateDto::get_IsActive()
+FNDA:0,System.Boolean Films.Application.DTOs.DirectorUpdateDto::get_IsActive()
+DA:36,0
+LF:15
+LH:0
+BRF:0
+BRH:0
+FNF:15
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP2710/transformed-code/849/studio-workspace/ASP11/src/Films.Application/DTOs/FilmDto.cs
+FN:7,System.Int32 Films.Application.DTOs.FilmDto::get_Id()
+FNDA:5,System.Int32 Films.Application.DTOs.FilmDto::get_Id()
+DA:8,5
+FN:8,System.String Films.Application.DTOs.FilmDto::get_Name()
+FNDA:8,System.String Films.Application.DTOs.FilmDto::get_Name()
+DA:9,8
+FN:9,System.String Films.Application.DTOs.FilmDto::get_Description()
+FNDA:0,System.String Films.Application.DTOs.FilmDto::get_Description()
+DA:10,0
+FN:10,System.DateTime Films.Application.DTOs.FilmDto::get_CreatedDate()
+FNDA:0,System.DateTime Films.Application.DTOs.FilmDto::get_CreatedDate()
+DA:11,0
+FN:11,System.Nullable`1<System.DateTime> Films.Application.DTOs.FilmDto::get_ModifiedDate()
+FNDA:0,System.Nullable`1<System.DateTime> Films.Application.DTOs.FilmDto::get_ModifiedDate()
+DA:12,0
+FN:12,System.Boolean Films.Application.DTOs.FilmDto::get_IsActive()
+FNDA:0,System.Boolean Films.Application.DTOs.FilmDto::get_IsActive()
+DA:13,0
+FN:20,System.String Films.Application.DTOs.FilmCreateDto::get_Name()
+FNDA:3,System.String Films.Application.DTOs.FilmCreateDto::get_Name()
+DA:21,3
+FN:21,System.String Films.Application.DTOs.FilmCreateDto::get_Description()
+FNDA:0,System.String Films.Application.DTOs.FilmCreateDto::get_Description()
+DA:22,0
+FN:29,System.String Films.Application.DTOs.FilmUpdateDto::get_Name()
+FNDA:0,System.String Films.Application.DTOs.FilmUpdateDto::get_Name()
+DA:30,0
+FN:30,System.String Films.Application.DTOs.FilmUpdateDto::get_Description()
+FNDA:0,System.String Films.Application.DTOs.FilmUpdateDto::get_Description()
+DA:31,0
+FN:31,System.Boolean Films.Application.DTOs.FilmUpdateDto::get_IsActive()
+FNDA:0,System.Boolean Films.Application.DTOs.FilmUpdateDto::get_IsActive()
+DA:32,0
+LF:11
+LH:3
+BRF:0
+BRH:0
+FNF:11
+FNH:3
+end_of_record

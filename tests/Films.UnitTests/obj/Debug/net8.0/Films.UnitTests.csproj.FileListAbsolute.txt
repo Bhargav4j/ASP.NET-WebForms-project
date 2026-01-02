@@ -113,3 +113,4 @@
 /modernize-data/studio-data/TNT1001/APP2710/transformed-code/849/studio-workspace/ASP11/tests/Films.UnitTests/obj/Debug/net8.0/Films.UnitTests.pdb
 /modernize-data/studio-data/TNT1001/APP2710/transformed-code/849/studio-workspace/ASP11/tests/Films.UnitTests/obj/Debug/net8.0/Films.UnitTests.genruntimeconfig.cache
 /modernize-data/studio-data/TNT1001/APP2710/transformed-code/849/studio-workspace/ASP11/tests/Films.UnitTests/obj/Debug/net8.0/ref/Films.UnitTests.dll
+/modernize-data/studio-data/TNT1001/APP2710/transformed-code/849/studio-workspace/ASP11/tests/Films.UnitTests/bin/Debug/net8.0/CoverletSourceRootsMapping_Films.UnitTests
