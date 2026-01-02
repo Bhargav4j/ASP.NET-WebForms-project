@@ -1,0 +1,32 @@
+@page "{id:int}"
+@model Films.Web.Pages.FilmPages.DetailsModel
+@{
+    ViewData["Title"] = "Film Details";
+}
+
+<h1>Film Details</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">Name</dt>
+        <dd class="col-sm-9">@Model.Film?.Name</dd>
+
+        <dt class="col-sm-3">Description</dt>
+        <dd class="col-sm-9">@Model.Film?.Description</dd>
+
+        <dt class="col-sm-3">Created Date</dt>
+        <dd class="col-sm-9">@Model.Film?.CreatedDate.ToShortDateString()</dd>
+
+        <dt class="col-sm-3">Modified Date</dt>
+        <dd class="col-sm-9">@(Model.Film?.ModifiedDate?.ToShortDateString() ?? "N/A")</dd>
+
+        <dt class="col-sm-3">Active</dt>
+        <dd class="col-sm-9">@(Model.Film?.IsActive == true ? "Yes" : "No")</dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-page="Edit" asp-route-id="@Model.Film?.Id" class="btn btn-warning">Edit</a>
+    <a asp-page="Index" class="btn btn-secondary">Back to List</a>
+</div>

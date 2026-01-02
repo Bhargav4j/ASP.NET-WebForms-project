@@ -1,0 +1,27 @@
+@page "{id:int}"
+@model Films.Web.Pages.FilmPages.DeleteModel
+@{
+    ViewData["Title"] = "Delete Film";
+}
+
+<h1>Delete Film</h1>
+
+<h3>Are you sure you want to delete this film?</h3>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">Name</dt>
+        <dd class="col-sm-9">@Model.Film?.Name</dd>
+
+        <dt class="col-sm-3">Description</dt>
+        <dd class="col-sm-9">@Model.Film?.Description</dd>
+
+        <dt class="col-sm-3">Created Date</dt>
+        <dd class="col-sm-9">@Model.Film?.CreatedDate.ToShortDateString()</dd>
+    </dl>
+
+    <form method="post">
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
