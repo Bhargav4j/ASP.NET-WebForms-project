@@ -1,0 +1,39 @@
+@page
+@model Films.Web.Pages.Films.DetailsModel
+@{
+    ViewData["Title"] = "Film Details";
+}
+
+<div class="container">
+    <h1>Film Details</h1>
+    <hr />
+    @if (Model.Film != null)
+    {
+        <dl class="row">
+            <dt class="col-sm-3">Name</dt>
+            <dd class="col-sm-9">@Model.Film.Name</dd>
+
+            <dt class="col-sm-3">Description</dt>
+            <dd class="col-sm-9">@Model.Film.Description</dd>
+
+            <dt class="col-sm-3">Year</dt>
+            <dd class="col-sm-9">@Model.Film.Year</dd>
+
+            <dt class="col-sm-3">Genre</dt>
+            <dd class="col-sm-9">@Model.Film.Genre</dd>
+
+            <dt class="col-sm-3">Created Date</dt>
+            <dd class="col-sm-9">@Model.Film.CreatedDate.ToString("yyyy-MM-dd HH:mm")</dd>
+        </dl>
+
+        <div>
+            <a asp-page="Edit" asp-route-id="@Model.Film.Id" class="btn btn-warning">Edit</a>
+            <a asp-page="Index" class="btn btn-secondary">Back to List</a>
+        </div>
+    }
+    else
+    {
+        <p class="text-danger">Film not found</p>
+        <a asp-page="Index" class="btn btn-secondary">Back to List</a>
+    }
+</div>
