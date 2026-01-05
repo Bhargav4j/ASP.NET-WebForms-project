@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Films.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee934f91d0aa259d8e288e33e9d369654a3780c9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ff02651228143799ef3cbd56df0a46e6b9b95d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Films.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Films.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
