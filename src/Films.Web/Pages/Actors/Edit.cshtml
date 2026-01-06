@@ -1,0 +1,35 @@
+@page
+@model Films.Web.Pages.Actors.EditModel
+@{
+    ViewData["Title"] = "Edit Actor";
+}
+
+<h1>Edit Actor</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <input type="hidden" asp-for="ActorInput.Id" />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ActorInput.FirstName" class="control-label"></label>
+                <input asp-for="ActorInput.FirstName" class="form-control" />
+                <span asp-validation-for="ActorInput.FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ActorInput.LastName" class="control-label"></label>
+                <input asp-for="ActorInput.LastName" class="form-control" />
+                <span asp-validation-for="ActorInput.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-3">
+                <input type="submit" value="Save" class="btn btn-primary" />
+                <a asp-page="Index" class="btn btn-secondary">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

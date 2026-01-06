@@ -1,0 +1,31 @@
+@page
+@model Films.Web.Pages.Users.DetailsModel
+@{
+    ViewData["Title"] = "User Details";
+}
+
+<h1>User Details</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Username</dt>
+        <dd class="col-sm-10">@Model.User?.Username</dd>
+
+        <dt class="col-sm-2">Email</dt>
+        <dd class="col-sm-10">@Model.User?.Email</dd>
+
+        <dt class="col-sm-2">First Name</dt>
+        <dd class="col-sm-10">@Model.User?.FirstName</dd>
+
+        <dt class="col-sm-2">Last Name</dt>
+        <dd class="col-sm-10">@Model.User?.LastName</dd>
+
+        <dt class="col-sm-2">Created Date</dt>
+        <dd class="col-sm-10">@Model.User?.CreatedDate.ToString("yyyy-MM-dd HH:mm")</dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="Edit" asp-route-id="@Model.User?.Id" class="btn btn-warning">Edit</a>
+    <a asp-page="Index" class="btn btn-secondary">Back to List</a>
+</div>

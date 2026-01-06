@@ -1,0 +1,119 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Films.Web
+build_property.RootNamespace = Films.Web
+build_property.ProjectDir = /modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web
+build_property._RazorSourceGeneratorDebug = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/Actors/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWN0b3JzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/Actors/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWN0b3JzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/Actors/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWN0b3JzL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/Actors/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWN0b3JzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/Actors/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWN0b3JzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/Directors/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGlyZWN0b3JzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/Directors/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGlyZWN0b3JzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/Directors/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGlyZWN0b3JzL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/Directors/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGlyZWN0b3JzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/Directors/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGlyZWN0b3JzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/Films/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmlsbXMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/Films/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmlsbXMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/Films/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmlsbXMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/Films/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmlsbXMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/Films/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmlsbXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlcnMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/Users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlcnMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlcnMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlcnMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlcnMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

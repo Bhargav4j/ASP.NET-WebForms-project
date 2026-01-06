@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "6oS0GBL5FZ5CA7FX9ygXVHAFFyfutEKOM2r2Vf0DUII=",
+  "Source": "Films.Web",
+  "BasePath": "_content/Films.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Films.Web/wwwroot",
+      "Source": "Films.Web",
+      "ContentRoot": "/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/wwwroot/",
+      "BasePath": "_content/Films.Web",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/wwwroot/css/site.css",
+      "SourceId": "Films.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/wwwroot/",
+      "BasePath": "_content/Films.Web",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/site.css"
+    },
+    {
+      "Identity": "/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/wwwroot/js/site.js",
+      "SourceId": "Films.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/modernize-data/studio-data/TNT1001/APP2748/transformed-code/888/studio-workspace/Aspcomp/src/Films.Web/wwwroot/",
+      "BasePath": "_content/Films.Web",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/site.js"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+@page
+@model Films.Web.Pages.Actors.IndexModel
+@{
+    ViewData["Title"] = "Actors";
+}
+
+<h1>Actors</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-primary">Create New</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Gender</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var actor in Model.Actors)
+        {
+            <tr>
+                <td>@actor.FirstName</td>
+                <td>@actor.LastName</td>
+                <td>@actor.Sex?.Name</td>
+                <td>
+                    <a asp-page="Details" asp-route-id="@actor.Id" class="btn btn-sm btn-info">Details</a>
+                    <a asp-page="Edit" asp-route-id="@actor.Id" class="btn btn-sm btn-warning">Edit</a>
+                    <a asp-page="Delete" asp-route-id="@actor.Id" class="btn btn-sm btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
