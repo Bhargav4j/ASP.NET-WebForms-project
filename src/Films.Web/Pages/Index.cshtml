@@ -1,0 +1,36 @@
+@page
+@model Films.Web.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Films Application</h1>
+    <p class="lead">Creating a project for the discipline "Technologies for Building Web Systems" - exercise</p>
+
+    <div class="my-4">
+        <img src="~/images/web_site.png" alt="Web Site" class="img-fluid" style="max-width: 500px;" />
+    </div>
+
+    <p>
+        <a href="https://moodle.unwe.bg" class="btn btn-primary btn-lg" target="_blank">Learn More &gt;&gt;</a>
+    </p>
+
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <h3>Films</h3>
+            <p>Browse and manage the collection of films in our database.</p>
+            <p><a class="btn btn-secondary" asp-page="/Films/Index">View Films &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h3>Actors</h3>
+            <p>Explore the list of actors and their information.</p>
+            <p><a class="btn btn-secondary" asp-page="/Actors/Index">View Actors &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h3>Contact</h3>
+            <p>Get in touch with us for any inquiries or feedback.</p>
+            <p><a class="btn btn-secondary" asp-page="/Contact">Contact Us &raquo;</a></p>
+        </div>
+    </div>
+</div>
