@@ -1,0 +1,59 @@
+# Build artifacts
+bin/
+obj/
+
+# IDE and editor files
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation
+*.md
+README*
+LICENSE*
+
+# Docker files
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# Configuration
+launchSettings.json
+
+# Test files
+**/*.Tests/
+**/*Tests.csproj
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/

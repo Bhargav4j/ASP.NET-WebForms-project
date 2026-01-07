@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  aspnetwebfprojcontain06:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: aspnetwebfprojcontain06:latest
+    container_name: aspnetwebfprojcontain06
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:8080
+      - ConnectionStrings__DefaultConnection=${DATABASE_CONNECTION_STRING}
+      - DOTNET_RUNNING_IN_CONTAINER=true
+      - TZ=UTC
+    volumes:
+      - ./logs:/app/logs
+      - ./appsettings.Production.json:/app/appsettings.Production.json:ro
+    restart: unless-stopped
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8080/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  logs:
+    driver: local

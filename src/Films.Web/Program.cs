@@ -4,12 +4,14 @@ using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Ensure environment variables are loaded for containerized environments
+builder.Configuration.AddEnvironmentVariables();
+
 // Configure Serilog
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(builder.Configuration)
     .Enrich.FromLogContext()
     .WriteTo.Console()
-    .WriteTo.File("logs/films-.txt", rollingInterval: RollingInterval.Day)
     .CreateLogger();
 
 builder.Host.UseSerilog();

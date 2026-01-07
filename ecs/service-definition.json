@@ -1,0 +1,42 @@
+{
+  "serviceName": "aspnetwebfprojcontain06-service",
+  "cluster": "{{CLUSTER_NAME}}",
+  "taskDefinition": "aspnetwebfprojcontain06-task",
+  "desiredCount": 2,
+  "launchType": "FARGATE",
+  "networkConfiguration": {
+    "awsvpcConfiguration": {
+      "subnets": ["{{SUBNET_1}}", "{{SUBNET_2}}"],
+      "securityGroups": ["{{SECURITY_GROUP}}"],
+      "assignPublicIp": "ENABLED"
+    }
+  },
+  "deploymentConfiguration": {
+    "maximumPercent": 200,
+    "minimumHealthyPercent": 50
+  },
+  "healthCheckGracePeriodSeconds": 300,
+  "loadBalancers": [
+    {
+      "targetGroupArn": "{{TARGET_GROUP_ARN}}",
+      "containerName": "aspnetwebfprojcontain06",
+      "containerPort": 8080
+    }
+  ],
+  "enableECSManagedTags": true,
+  "propagateTags": "SERVICE",
+  "tags": [
+    {
+      "key": "Environment",
+      "value": "production"
+    },
+    {
+      "key": "Application",
+      "value": "aspnetwebfprojcontain06"
+    },
+    {
+      "key": "ManagedBy",
+      "value": "ECS"
+    }
+  ]
+}

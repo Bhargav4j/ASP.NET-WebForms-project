@@ -1,0 +1,45 @@
+# Build stage
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS builder
+
+WORKDIR /src
+
+# Copy project files and restore dependencies
+COPY *.csproj ./
+RUN dotnet restore
+
+# Copy remaining source code
+COPY . .
+
+# Build and publish the application
+RUN dotnet build -c Release --no-restore
+RUN dotnet publish -c Release -o /app/publish --no-restore --no-build
+
+# Runtime stage
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
+
+WORKDIR /app
+
+# Create non-root user for security
+RUN groupadd -r appuser && useradd -r -g appuser appuser
+
+# Copy published application from builder stage
+COPY --from=builder /app/publish .
+
+# Set ownership to non-root user
+RUN chown -R appuser:appuser /app
+
+# Switch to non-root user
+USER appuser
+
+# Set environment variables
+ENV ASPNETCORE_ENVIRONMENT=Production \
+    ASPNETCORE_URLS=http://+:8080 \
+    DOTNET_RUNNING_IN_CONTAINER=true \
+    DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false \
+    TZ=UTC
+
+# Expose application port
+EXPOSE 8080
+
+# Entry point
+ENTRYPOINT ["dotnet", "ASPNETWebFprojContain06.dll"]
