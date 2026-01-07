@@ -1,0 +1,37 @@
+using Films.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+namespace Films.Infrastructure.Data.Configurations;
+
+public class FilmConfiguration : IEntityTypeConfiguration<Film>
+{
+    public void Configure(EntityTypeBuilder<Film> builder)
+    {
+        builder.ToTable("Film");
+
+        builder.HasKey(f => f.Id);
+
+        builder.Property(f => f.Name)
+            .IsRequired()
+            .HasMaxLength(200);
+
+        builder.Property(f => f.Description)
+            .HasMaxLength(1000);
+
+        builder.Property(f => f.CreatedDate)
+            .IsRequired()
+            .HasDefaultValueSql("GETUTCDATE()");
+
+        builder.Property(f => f.IsActive)
+            .IsRequired()
+            .HasDefaultValue(true);
+
+        builder.Property(f => f.CreatedBy)
+            .IsRequired()
+            .HasMaxLength(100);
+
+        builder.Property(f => f.ModifiedBy)
+            .HasMaxLength(100);
+    }
+}

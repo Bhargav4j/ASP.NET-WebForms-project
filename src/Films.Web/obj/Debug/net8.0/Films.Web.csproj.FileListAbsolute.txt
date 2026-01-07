@@ -1,0 +1,9 @@
+/modernize-data/studio-data/TNT1001/APP2803/transformed-code/932/studio-workspace/ASP711/src/Films.Web/obj/Debug/net8.0/Films.Web.csproj.AssemblyReference.cache
+/modernize-data/studio-data/TNT1001/APP2803/transformed-code/932/studio-workspace/ASP711/src/Films.Web/obj/Debug/net8.0/Films.Web.GeneratedMSBuildEditorConfig.editorconfig
+/modernize-data/studio-data/TNT1001/APP2803/transformed-code/932/studio-workspace/ASP711/src/Films.Web/obj/Debug/net8.0/Films.Web.AssemblyInfoInputs.cache
+/modernize-data/studio-data/TNT1001/APP2803/transformed-code/932/studio-workspace/ASP711/src/Films.Web/obj/Debug/net8.0/Films.Web.AssemblyInfo.cs
+/modernize-data/studio-data/TNT1001/APP2803/transformed-code/932/studio-workspace/ASP711/src/Films.Web/obj/Debug/net8.0/Films.Web.csproj.CoreCompileInputs.cache
+/modernize-data/studio-data/TNT1001/APP2803/transformed-code/932/studio-workspace/ASP711/src/Films.Web/obj/Debug/net8.0/Films.Web.MvcApplicationPartsAssemblyInfo.cache
+/modernize-data/studio-data/TNT1001/APP2803/transformed-code/932/studio-workspace/ASP711/src/Films.Web/obj/Debug/net8.0/Films.Web.RazorAssemblyInfo.cache
+/modernize-data/studio-data/TNT1001/APP2803/transformed-code/932/studio-workspace/ASP711/src/Films.Web/obj/Debug/net8.0/Films.Web.RazorAssemblyInfo.cs
+/modernize-data/studio-data/TNT1001/APP2803/transformed-code/932/studio-workspace/ASP711/src/Films.Web/obj/Debug/net8.0/Films.Web.sourcelink.json
