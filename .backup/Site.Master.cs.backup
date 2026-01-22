@@ -48,9 +48,6 @@ namespace FIlms
 
         protected void master_Page_PreLoad(object sender, EventArgs e)
         {
-            // NOTE: ViewState is used here for Anti-XSRF protection
-            // In cloud environments, ViewState adds payload size and should be minimized
-            // Consider migrating to ASP.NET Core with built-in anti-forgery tokens for better cloud performance
             if (!IsPostBack)
             {
                 // Set Anti-XSRF token

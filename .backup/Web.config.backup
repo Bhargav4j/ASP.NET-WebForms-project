@@ -9,13 +9,11 @@
     <section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
   </configSections>
   <connectionStrings>
-    <!-- Cloud-ready connection strings using environment variables -->
-    <!-- Set DB_SERVER, DB_NAME, DB_USER, DB_PASSWORD as environment variables or use AWS Parameter Store/Secrets Manager -->
-    <add name="DefaultConnection" connectionString="Server=${DB_SERVER};Database=${DB_AUTH_NAME};User Id=${DB_USER};Password=${DB_PASSWORD};MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=False"
+    <add name="DefaultConnection" connectionString="Data Source=(LocalDb)\v11.0;Initial Catalog=aspnet-FIlms-20161006100215;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\aspnet-FIlms-20161006100215.mdf"
       providerName="System.Data.SqlClient" />
-    <add name="filmsEntities" connectionString="metadata=res://*/Models.FilmsData.csdl|res://*/Models.FilmsData.ssdl|res://*/Models.FilmsData.msl;provider=System.Data.SqlClient;provider connection string=&quot;Server=${DB_SERVER};Database=${DB_NAME};User Id=${DB_USER};Password=${DB_PASSWORD};MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=False;App=EntityFramework&quot;"
+    <add name="filmsEntities" connectionString="metadata=res://*/Models.FilmsData.csdl|res://*/Models.FilmsData.ssdl|res://*/Models.FilmsData.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=DESKTOP-52UDVT7\FILIP;initial catalog=films;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;"
       providerName="System.Data.EntityClient" />
-    <add name="filmsConnectionString" connectionString="Server=${DB_SERVER};Database=${DB_NAME};User Id=${DB_USER};Password=${DB_PASSWORD};MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=False;Application Name=EntityFramework"
+    <add name="filmsConnectionString" connectionString="Data Source=DESKTOP-52UDVT7\FILIP;Initial Catalog=films;Integrated Security=True;MultipleActiveResultSets=True;Application Name=EntityFramework"
       providerName="System.Data.SqlClient" />
   </connectionStrings>
   <!--
@@ -43,20 +41,8 @@
         <add tagPrefix="ajaxToolkit" assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" />
       </controls>
     </pages>
-    <!-- Cloud-ready Forms Authentication with machine key for distributed environments -->
-    <!-- IMPORTANT: Generate unique machineKey values for production using: https://support.microsoft.com/en-us/kb/312906 -->
-    <!-- Store these keys in AWS Parameter Store or Secrets Manager for security -->
-    <machineKey
-      validationKey="${MACHINE_VALIDATION_KEY}"
-      decryptionKey="${MACHINE_DECRYPTION_KEY}"
-      validation="HMACSHA256"
-      decryption="AES" />
     <authentication mode="Forms">
-      <forms loginUrl="~/Account/Login" timeout="2880" defaultUrl="~/"
-             slidingExpiration="true"
-             protection="All"
-             requireSSL="false"
-             cookieless="UseCookies" />
+      <forms loginUrl="~/Account/Login" timeout="2880" defaultUrl="~/" />
     </authentication>
     <profile defaultProvider="DefaultProfileProvider">
       <providers>
@@ -74,11 +60,12 @@
       </providers>
     </roleManager>
     <!--
-            Cloud-ready session state configuration using SQL Server for distributed session management.
-            This allows horizontal scaling across multiple web server instances in AWS.
-            For AWS ElastiCache Redis, change mode to "Custom" and use a Redis session provider.
+            If you are deploying to a cloud environment that has multiple web server instances,
+            you should change session state mode from "InProc" to "Custom". In addition,
+            change the connection string named "DefaultConnection" to connect to an instance
+            of SQL Server (including SQL Azure and SQL  Compact) instead of to SQL Server Express.
       -->
-    <sessionState mode="Custom" customProvider="DefaultSessionProvider" timeout="20">
+    <sessionState mode="InProc" customProvider="DefaultSessionProvider">
       <providers>
         <add name="DefaultSessionProvider" type="System.Web.Providers.DefaultSessionStateProvider, System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" connectionStringName="DefaultConnection" />
       </providers>
@@ -97,10 +84,9 @@
     </assemblyBinding>
   </runtime>
   <entityFramework>
-    <!-- Cloud-ready Entity Framework configuration using SQL Server instead of LocalDb -->
-    <defaultConnectionFactory type="System.Data.Entity.Infrastructure.SqlConnectionFactory, EntityFramework">
+    <defaultConnectionFactory type="System.Data.Entity.Infrastructure.LocalDbConnectionFactory, EntityFramework">
       <parameters>
-        <parameter value="Server=${DB_SERVER};Database=${DB_NAME};User Id=${DB_USER};Password=${DB_PASSWORD};MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=False" />
+        <parameter value="v11.0" />
       </parameters>
     </defaultConnectionFactory>
   </entityFramework>

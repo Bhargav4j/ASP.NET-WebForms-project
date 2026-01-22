@@ -14,6 +14,13 @@ namespace FIlms
         void Application_Start(object sender, EventArgs e)
         {
             // Code that runs on application startup
+
+            // IMPORTANT: Initialize cloud configuration FIRST
+            // This replaces environment variable placeholders in connection strings
+            // Required for AWS deployment with environment-specific configuration
+            CloudConfigHelper.InitializeCloudConfiguration();
+            CloudConfigHelper.ValidateCloudConfiguration();
+
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterOpenAuth();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
