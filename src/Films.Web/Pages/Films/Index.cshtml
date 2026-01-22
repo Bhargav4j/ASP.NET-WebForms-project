@@ -1,0 +1,46 @@
+@page
+@model Films.Web.Pages.Films.IndexModel
+@{
+    ViewData["Title"] = "Films";
+}
+
+<h1>Films</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-success">Create New</a>
+</p>
+
+@if (Model.Films != null && Model.Films.Any())
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Year</th>
+                <th>Genre</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var film in Model.Films)
+            {
+                <tr>
+                    <td>@film.Name</td>
+                    <td>@film.Year</td>
+                    <td>@film.Genre</td>
+                    <td>@(film.Description != null && film.Description.Length > 50 ? film.Description.Substring(0, 50) + "..." : film.Description)</td>
+                    <td>
+                        <a asp-page="Details" asp-route-id="@film.Id" class="btn btn-sm btn-info">Details</a>
+                        <a asp-page="Edit" asp-route-id="@film.Id" class="btn btn-sm btn-warning">Edit</a>
+                        <a asp-page="Delete" asp-route-id="@film.Id" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No films found.</p>
+}

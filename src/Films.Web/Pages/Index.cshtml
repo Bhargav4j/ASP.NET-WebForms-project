@@ -1,0 +1,48 @@
+@page
+@model Films.Web.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Films Management System</h1>
+    <p>Learn about building web applications using ASP.NET Core and .NET 8</p>
+    <div class="row mt-5">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Films</h5>
+                    <p class="card-text">Manage your film collection</p>
+                    <a asp-page="/Films/Index" class="btn btn-primary">View Films</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Actors</h5>
+                    <p class="card-text">Manage actors in the system</p>
+                    <a asp-page="/Actors/Index" class="btn btn-primary">View Actors</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Directors</h5>
+                    <p class="card-text">Manage directors in the system</p>
+                    <a asp-page="/Directors/Index" class="btn btn-primary">View Directors</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Users</h5>
+                    <p class="card-text">Manage system users</p>
+                    <a asp-page="/Users/Index" class="btn btn-primary">View Users</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
